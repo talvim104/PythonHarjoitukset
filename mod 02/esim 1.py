@@ -1,6 +1,6 @@
 nimi = " Tarja"
 print("Moi" + nimi + ", mitä kuuluu?")
-print(f"Moi {nimi}, kuinkas nyt menee?")
+print(f"Moi{nimi}, kuinkas nyt menee?")
 
 #käyttajan syötteen lukeminen
 #huom: input lukee kaikki syötteet
