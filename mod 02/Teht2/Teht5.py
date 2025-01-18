@@ -7,6 +7,7 @@ luodit = float(input("Anna luodit: "))
 
 massa_1 = leiviska * leiviskat + naula * naulat + luoti * luodit
 massa_2 = int(massa_1 // 1000)
-massa_3 = round(massa_1 % 1000, 2)
+massa_3 = (massa_1 % 1000)
 print("Massa nykymittojen mukaan: ")
-print(massa_2, "kilogrammaa", massa_3, "grammaa")
+print(massa_2, "kilogrammaa",f"{massa_3:10.2f}", "grammaa")
+
