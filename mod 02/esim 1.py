@@ -13,3 +13,4 @@ lukuB = int( input("Anna toinen luku: ") )
 summa = lukuA + lukuB
 
 print(f"Lukujesi summa =  {summa}")
+
