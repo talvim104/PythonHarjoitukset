@@ -1,4 +1,4 @@
-import math
+
 
 sade_str = input("Anna ympyrän säde:")
 #muunnetaan säde desimaaliluvuksi
