@@ -1,9 +1,9 @@
 leiviska = 13.3 * 32 * 20
 naula = 13.3 * 32
 luoti = 13.3
-leiviskat = float(input("Anna leiviskät: "))
-naulat = float(input("Anna naulat: "))
-luodit = float(input("Anna luodit: "))
+leiviskat = float(input("Anna leiviskät: \n"))
+naulat = float(input("Anna naulat: \n"))
+luodit = float(input("Anna luodit: \n"))
 
 massa_1 = leiviska * leiviskat + naula * naulat + luoti * luodit
 massa_2 = int(massa_1 // 1000)
