@@ -10,3 +10,7 @@ num2 = random.randint(1, 6)
 num3 = random.randint(1, 6)
 num4 = random.randint(1, 6)
 print("Neljänumeroinen koodi:" + str(num1) + str(num2) + str(num3) + str(num4))
+
+print(f"Koodi: {num1,num2,num3,num4}")
+
+
