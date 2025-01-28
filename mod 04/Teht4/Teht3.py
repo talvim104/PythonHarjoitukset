@@ -10,5 +10,5 @@ while luku != "":
         suurin = luku
     luku = input("Anna seuraava luku: ")
 
-print(f"Suurin antamasi luku: {suurin}")
-print(f"Pienin antamasi luku: {pienin}")
+print(f"Suurin luku: {suurin}")
+print(f"Pienin luku: {pienin}")
