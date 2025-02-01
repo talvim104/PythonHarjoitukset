@@ -1,0 +1,72 @@
+def nelio(luku):
+    tulos = luku ** 2
+    return tulos
+
+arvo = float(input("Anna luku: "))
+vastaus = nelio(arvo)
+
+print(f"Lukusi on: {vastaus:.2f}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
