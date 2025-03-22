@@ -46,7 +46,7 @@ print()
 print("Tulokset:")
 
 for auto in autot:
-    print(f"Rekisteri: {auto.rekisteritunnus}")
+    print(f"Rekisteritunnus: {auto.rekisteritunnus}")
     print(f"Huippunopeus: {auto.huippunopeus} km/h")
     print(f"Tämänhetkinen nopeus: {auto.nopeus} km/h")
     print(f"Kuljettu matka: {int(auto.kuljettu_matka)} km")
