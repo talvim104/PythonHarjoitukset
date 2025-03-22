@@ -22,3 +22,4 @@ def hae_tiedot(maatunnus):
 
 maatunnus_2 = input("Anna kentän maatunnus: ")
 hae_tiedot(maatunnus_2)
+
