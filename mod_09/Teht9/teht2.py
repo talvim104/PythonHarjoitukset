@@ -5,16 +5,22 @@ class Auto:
         self.nopeus = 0
         self.kuljettu_matka = 0
 
-    def kiihdytä (self, nopeuden_muutos):
-        self.nopeus = self.nopeus + nopeuden_muutos
-        if nopuden_muutos < 0:
-            self.nopeus = 0
-        elif nopeuden_muutos > self.huippunopeus:
+    def kiihdyta (self, nopeuden_muutos):
+        self.nopeus += nopeuden_muutos
+        if self.nopeus > self.huippunopeus:
             self.nopeus = self.huippunopeus
+        elif self.nopeus < 0:
+            self.nopeus = 0
 
 
 my_auto = Auto("ABC-123", 142)
 
+my_auto.kiihdyta(30)
+my_auto.kiihdyta(70)
+my_auto.kiihdyta(50)
 
-print(f"Auton rekisteritunnus on {my_auto.rekisteritunnus}, huippunopeus on {my_auto.huippunopeus} km/h "
-      f"ja tämänhetkinen nopeus on {self.nopeus} km/h. Kuljettu matka on {my_auto.kuljettu_matka} km.")
+print(f"Tämänhetkinen nopeus: {my_auto.nopeus} km/h.")
+
+my_auto.kiihdyta(-200)
+
+print(f"Hätäjarrutuksen jälkeen nopeus: {my_auto.nopeus} km/h.")
