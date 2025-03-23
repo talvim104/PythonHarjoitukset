@@ -20,7 +20,6 @@ class Hissi:
         while self.nykyinen_kerros > uusi_kerros:
             self.kerros_alas()
 
-
 class Talo:
     def __init__(self, alin_kerros, ylin_kerros, hissien_lukumaara):
         self.hissit = []
