@@ -48,15 +48,15 @@ for i in range(1, 11):
     huippu = random.randint(100, 200)
     autot.append(Auto(rek, huippu))
 
-kisa = Kilpailu("Suuri romuralli", 8000, autot)
+kilpailu = Kilpailu("Suuri romuralli", 8000, autot)
 
 tunti = 0
-while not kisa.kilpailu_ohi():
-    kisa.tunti_kuluu()
+while not kilpailu.kilpailu_ohi():
+    kilpailu.tunti_kuluu()
     tunti += 1
     if tunti % 10 == 0:
         print(f"Tunti: {tunti}")
-        kisa.tulosta_tilanne()
+        kilpailu.tulosta_tilanne()
 
 print(f"Kilpailu päättyi {tunti} tunnin jälkeen!")
-kisa.tulosta_tilanne()
+kilpailu.tulosta_tilanne()
