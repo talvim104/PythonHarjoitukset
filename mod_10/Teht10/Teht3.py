@@ -31,7 +31,14 @@ class Talo:
         hissi = self.hissit[numero]
         hissi.siirry_kerrokseen(kerros)
 
+    def palohalytys(self):
+        print("Palohälytys!")
+        for hissi in self.hissit:
+            hissi.siirry_kerrokseen(hissi.alin)
+
+
 talo = Talo(1, 7, 2)
 
 talo.aja_hissia(0, 5)
 talo.aja_hissia(1, 7)
+talo.palohalytys()
