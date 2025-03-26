@@ -12,7 +12,7 @@ class Kirja(Julkaisu):
         print(f"Kirjan nimi on {my_book.nimi}, kirjoittaja on {my_book.kirjoittaja}, sivumäärä on {my_book.sivumaara} sivua.")
 
 class Lehti(Julkaisu):
-    def __init__(self, nimi,  paatoimittaja):
+    def __init__(self, nimi, paatoimittaja):
         self. paatoimittaja =  paatoimittaja
         Julkaisu.__init__(self, nimi)
 
