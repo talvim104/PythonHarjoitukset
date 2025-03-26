@@ -6,7 +6,7 @@ class Auto:
         self.kuljettu_matka = 0
 
     def aseta_nopeus(self, uusi_nopeus):
-        self.nopeus = min(uusi_nopeus, self.huippunopeus)
+        self.nopeus = uusi_nopeus
 
     def kulje(self, tunnit):
         self.kuljettu_matka += self.nopeus * tunnit
@@ -24,9 +24,8 @@ class Polttomoottoriauto(Auto):
 my_auto1 = Sähköauto("ABC-15",180, "52.5 kWh")
 my_auto2 = Polttomoottoriauto("ACD-123", 150, "32.3 l")
 
-my_auto1.aseta_nopeus(110)
+my_auto1.aseta_nopeus(120)
 my_auto2.aseta_nopeus(130)
-
 
 my_auto1.kulje(3)
 my_auto2.kulje(3)
