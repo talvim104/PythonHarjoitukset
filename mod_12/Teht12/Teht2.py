@@ -5,10 +5,10 @@ paikkakunta = input("Anna paikkakunnan nimi: ")
 
 api_key = "1b9f7a6d3ea3538bf0e07f5bf6562743"
 
-pyynto = f"http://api.openweathermap.org/data/2.5/weather?q={paikkakunta}&appid={api_key}"
+pyyntö = f"http://api.openweathermap.org/data/2.5/weather?q={paikkakunta}&appid={api_key}"
 
 try:
-    vastaus = requests.get(pyynto)
+    vastaus = requests.get(pyyntö)
 
     print("Statuskoodi:", vastaus.status_code)
     print("Tekstivastaus:", vastaus.text)
