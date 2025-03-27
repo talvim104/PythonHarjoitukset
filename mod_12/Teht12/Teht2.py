@@ -4,10 +4,14 @@ import requests
 paikkakunta = input("Anna paikkakunnan nimi: ")
 
 api_key = "1b9f7a6d3ea3538bf0e07f5bf6562743"
-pyyntö = "http://api.openweathermap.org/data/2.5/weather?q={kaupunki}&appid={api_key}"
+
+pyynto = f"http://api.openweathermap.org/data/2.5/weather?q={paikkakunta}&appid={api_key}"
 
 try:
-    vastaus = requests.get(pyyntö)
+    vastaus = requests.get(pyynto)
+
+    print("Statuskoodi:", vastaus.status_code)
+    print("Tekstivastaus:", vastaus.text)
 
     if vastaus.status_code == 200:
         data = vastaus.json()
