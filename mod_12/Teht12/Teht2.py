@@ -10,9 +10,6 @@ pyyntö = f"http://api.openweathermap.org/data/2.5/weather?q={paikkakunta}&appid
 try:
     vastaus = requests.get(pyyntö)
 
-    print("Statuskoodi:", vastaus.status_code)
-    print("Tekstivastaus:", vastaus.text)
-
     if vastaus.status_code == 200:
         data = vastaus.json()
         kuvaus = data["weather"][0]["description"]
